@@ -1,0 +1,10 @@
+ Volume in drive C is Local Disk
+ Volume Serial Number is 4053-349B
+
+ Directory of C:\Users\nafis\OneDrive\Desktop\practice1
+
+09/06/2022  09:32 PM    <DIR>          .
+09/06/2022  08:52 PM    <DIR>          ..
+09/06/2022  09:32 PM                 0 test1.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  11,077,697,536 bytes free
