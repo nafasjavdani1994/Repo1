@@ -1,3 +1,4 @@
+@import "./normalize.css";
 :root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
@@ -7,16 +8,14 @@
     --color-headings: #1b0760;
     --color-border: #ccc;
     --border-radius: 30px;
-
 }
 
-*,
-::after,
-::before {
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
 /* typography */
+
 ::selection {
   background: var(--color-primary);
   color: #fff;
@@ -37,9 +36,7 @@ body {
     color: var(--color-body);
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -67,22 +64,19 @@ p {
     body {
         font-size: 1.8rem;
     }
-
     h1 {
         font-size: 8rem;
     }
-
     h2 {
         font-size: 4rem;
     }
-
     h3 {
         font-size: 2.4rem;
-    }
-    
+    }   
 }
 
 /* links */
+
 a {
     text-decoration: none;
 }
@@ -111,6 +105,7 @@ a {
 }
 
 /* badges */
+
 .badge {
     border-radius: 20px;
     font-size: 2rem;
@@ -145,6 +140,7 @@ a {
 }
 
 /* Lists */
+
 .list {
     list-style: none;
     padding-left: 0;
@@ -632,6 +628,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -726,9 +723,11 @@ a {
 }
 
 /* Hero */
+
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
+
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -741,13 +740,15 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 0;
-  }
-  
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-top: 0;
   }
 }
 
@@ -760,6 +761,7 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
@@ -783,9 +785,10 @@ a {
 
 .block-plans .card {
   max-width: 500px;
+  margin: 0 auto;
 }
 
-/* Feature */
+/* Features */
 .feature {
   gap: 4rem 2rem;
   margin: 12rem 0;
